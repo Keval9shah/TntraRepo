@@ -208,7 +208,7 @@
       <div class="button imgbtn">ABOUT US</div>
     </div>
     <!-- carousel -->
-    <div class="carousel">
+    <!-- <div class="carousel">
       <img
         class="prev"
         src="Images/angle-left-solid.svg"
@@ -231,7 +231,61 @@
         </div>
         <div class="name">FRANK KINNEY</div>
       </div>
+    </div> -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-card">
+            <img src="Images/1.jpg" alt="" />
+            <div class="carousel-desc">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil a
+              error quas voluptatem ullam, aliquid obcae cati nisi delectus vitae
+              beatae sapiente tempo ribus asperi ores, magni facilis quo veritatis!
+              Odio"
+            </div>
+            <div class="name">FRANK KINNEY</div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-card">
+            <img src="Images/pexelsphoto972325.jpeg" alt="" />
+            <div class="carousel-desc">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil a
+              error quas voluptatem ullam, aliquid obcae cati nisi delectus vitae
+              beatae sapiente tempo ribus asperi ores, magni facilis quo veritatis!
+              Odio"
+            </div>
+            <div class="name">FRANK KINNEY</div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-card">
+            <img src="Images/2.jpeg" alt="" />
+            <div class="carousel-desc">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil a
+              error quas voluptatem ullam, aliquid obcae cati nisi delectus vitae
+              beatae sapiente tempo ribus asperi ores, magni facilis quo veritatis!
+              Odio"
+            </div>
+            <div class="name">FRANK KINNEY</div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Prev</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
+    <!-- carousel -->
     <div class="footer">
       <div class="sample">
         sample text. click to select, sample text. click to select, sample text.
@@ -242,75 +296,54 @@
         <span>Website Builder Software</span>.
       </div>
     </div>
+    <script src="bootstrap.min.js"></script>
     <script>
-      var current = 0;
-      const carousel = document.querySelector(".carousel");
-      var arr = [
-        "<div class='carousel-card'><img src='Images/1.jpg' alt=''><div class='carousel-desc'>'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil a error quas voluptatem ullam, aliquid obcaecati nisi delectus vitae beatae sapiente temporibus asperiores, magni facilis quo veritatis! Odio, quisquam nemo?'</div><div class='name'>FRANK KINNEY</div></div>",
-        "<div class='carousel-card'><img src='Images/2.jpg' alt=''><div class='carousel-desc'>'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil a error quas voluptatem ullam, aliquid obcaecati nisi delectus vitae beatae sapiente temporibus asperiores, magni facilis quo veritatis! Odio, quisquam nemo?'</div><div class='name'>FRANK KINNEY</div></div>",
-      ];
-      var length = arr.length();
-      function handleleft() {
-        if (current - 1 >= 0) {
-          console.log("baaki chhe aji");
-        }
-      }
-      $("#1").waypoint(
-        function () {
-          increment(1, 87);
-        },
-        { offset: "75%" }
-      );
+      // $("#1").waypoint(
+      //   function () {
+      //     increment(1, 87);
+      //   },
+      //   { offset: "75%" }
+      // );
 
-      $("#2").waypoint(
-        function () {
-          increment(2, 43);
-        },
-        { offset: "75%" }
-      );
+      // $("#2").waypoint(
+      //   function () {
+      //     increment(2, 43);
+      //   },
+      //   { offset: "75%" }
+      // );
 
-      $("#3").waypoint(
-        function () {
-          increment(3, 79);
-        },
-        { offset: "75%" }
-      );
+      // $("#3").waypoint(
+      //   function () {
+      //     increment(3, 79);
+      //   },
+      //   { offset: "75%" }
+      // );
 
-      $("#4").waypoint(
-        function () {
-          increment(4, 68);
-        },
-        { offset: "75%" }
-      );
+      // $("#4").waypoint(
+      //   function () {
+      //     increment(4, 68);
+      //   },
+      //   { offset: "75%" }
+      // );
 
-      $("#5").waypoint(
-        function () {
-          increment(5, 46);
-        },
-        { offset: "75%" }
-      );
+      // $("#5").waypoint(
+      //   function () {
+      //     increment(5, 46);
+      //   },
+      //   { offset: "75%" }
+      // );
 
-      $("#6").waypoint(
-        function () {
-          increment(6, 14);
-        },
-        { offset: "75%" }
-      );
+      // $("#6").waypoint(
+      //   function () {
+      //     increment(6, 14);
+      //   },
+      //   { offset: "75%" }
+      // );
 
-      function increment(elem, finalVal) {
-        var currVal = parseInt(document.getElementById(elem).innerHTML, 10);
-        if (currVal < finalVal) {
-          currVal++;
-          document.getElementById(elem).innerHTML = currVal + "%";
 
-          setTimeout(function () {
-            increment(elem, finalVal);
-          }, 40);
-        }
-      }
-      document.onscroll=()=>{
-        document
-      }
+      // document.onscroll=()=>{
+      //   document
+      // }
     </script>
   </body>
 </html>
